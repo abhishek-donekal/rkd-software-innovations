@@ -7,6 +7,7 @@
   <meta name="description" content="RKD Software Innovations — custom AI, automation, websites, apps, data dashboards, and cloud infrastructure for modern businesses." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="logo.png" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -15,7 +16,7 @@
   <nav class="nav" id="nav">
     <div class="container nav-inner">
       <a href="#" class="logo">
-        <span class="logo-icon">⬡</span>
+        <img src="logo.png" alt="RKD Software Innovations" class="logo-img" />
         RKD <span class="logo-accent">Software</span>
       </a>
       <ul class="nav-links">
@@ -36,39 +37,70 @@
     <a href="#contact" class="mob-link mob-cta">Get a Free Consult</a>
   </div>
 
-  <!-- HERO -->
+  <!-- HERO — two-column split -->
   <section class="hero">
     <div class="hero-bg">
-      <div class="orb orb1"></div>
-      <div class="orb orb2"></div>
-      <div class="orb orb3"></div>
       <div class="grid-overlay"></div>
     </div>
     <div class="container hero-inner">
-      <div class="hero-badge">
-        <span class="badge-dot"></span>
-        Now Accepting New Clients
+
+      <div class="hero-left">
+        <div class="hero-logo-wrap">
+          <img src="logo.png" alt="RKD Software Innovations Logo" class="hero-logo" />
+        </div>
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Now Accepting New Clients
+        </div>
+        <h1 class="hero-title">
+          We Build the Tech<br/>
+          <span class="gradient-text">That Runs Your Business.</span>
+        </h1>
+        <p class="hero-sub">From intelligent AI assistants to cloud infrastructure — RKD Software Innovations delivers end-to-end technology so you can focus on what matters: <strong>growing your business.</strong></p>
+        <div class="hero-cta">
+          <a href="#contact" class="btn btn-glow">Start a Project</a>
+          <a href="#services" class="btn btn-outline">Explore Services</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hstat"><strong>50+</strong><span>Projects Delivered</span></div>
+          <div class="hstat-div"></div>
+          <div class="hstat"><strong>24/7</strong><span>Support</span></div>
+          <div class="hstat-div"></div>
+          <div class="hstat"><strong>100%</strong><span>Custom-Built</span></div>
+        </div>
       </div>
-      <h1 class="hero-title">
-        We Build the Tech<br/>
-        <span class="gradient-text">That Runs Your Business.</span>
-      </h1>
-      <p class="hero-sub">From intelligent AI assistants to cloud infrastructure — RKD Software Innovations delivers end-to-end technology so you can focus on what matters: <strong>growing your business.</strong></p>
-      <div class="hero-cta">
-        <a href="#contact" class="btn btn-glow">Start a Project</a>
-        <a href="#services" class="btn btn-outline">Explore Services</a>
+
+      <div class="hero-right">
+        <div class="hf-card">
+          <div class="hf-icon hf-ai">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5.6 5.6l2.1 2.1M16.2 16.2l2.1 2.1M5.6 18.4l2.1-2.1M16.2 7.8l2.1-2.1"/></svg>
+          </div>
+          <div class="hf-text"><strong>AI &amp; Automation</strong><span>Custom assistants &amp; workflows</span></div>
+          <span class="hf-check">✓</span>
+        </div>
+        <div class="hf-card">
+          <div class="hf-icon hf-web">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="14" rx="2"/><path d="M8 22h8M12 18v4"/></svg>
+          </div>
+          <div class="hf-text"><strong>Websites &amp; Mobile Apps</strong><span>High-performance digital products</span></div>
+          <span class="hf-check">✓</span>
+        </div>
+        <div class="hf-card">
+          <div class="hf-icon hf-data">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21V9l6-5 6 4 6-6v19"/><path d="M8 17v4M12 14v7M16 11v10"/></svg>
+          </div>
+          <div class="hf-text"><strong>Data &amp; Dashboards</strong><span>Real-time business intelligence</span></div>
+          <span class="hf-check">✓</span>
+        </div>
+        <div class="hf-card">
+          <div class="hf-icon hf-cloud">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10a6 6 0 0 0-12 0 5 5 0 0 0 0 10h12a5 5 0 0 0 0-10z"/></svg>
+          </div>
+          <div class="hf-text"><strong>Cloud Infrastructure</strong><span>AWS &amp; Google Cloud solutions</span></div>
+          <span class="hf-check">✓</span>
+        </div>
       </div>
-      <div class="hero-stats">
-        <div class="hstat"><strong>50+</strong><span>Projects Delivered</span></div>
-        <div class="hstat-div"></div>
-        <div class="hstat"><strong>24/7</strong><span>Support</span></div>
-        <div class="hstat-div"></div>
-        <div class="hstat"><strong>100%</strong><span>Custom-Built</span></div>
-      </div>
-    </div>
-    <div class="hero-scroll">
-      <span>Scroll</span>
-      <div class="scroll-line"></div>
+
     </div>
   </section>
 
@@ -295,7 +327,7 @@
   <footer class="footer">
     <div class="container footer-inner">
       <a href="#" class="logo">
-        <span class="logo-icon">⬡</span>
+        <img src="logo.png" alt="RKD Software Innovations" class="logo-img" />
         RKD <span class="logo-accent">Software</span>
       </a>
       <p class="footer-copy">&copy; 2026 RKD Software Innovations. All rights reserved.</p>
@@ -308,13 +340,11 @@
   </footer>
 
   <script>
-    // Nav scroll effect
     const nav = document.getElementById('nav');
     window.addEventListener('scroll', () => {
       nav.classList.toggle('scrolled', window.scrollY > 40);
     });
 
-    // Hamburger
     const hamburger = document.getElementById('hamburger');
     const mobileMenu = document.getElementById('mobileMenu');
     hamburger.addEventListener('click', () => {
@@ -328,21 +358,19 @@
       });
     });
 
-    // Scroll-reveal
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
     }, { threshold: 0.1 });
-    document.querySelectorAll('.card, .step, .a-card').forEach(el => {
+    document.querySelectorAll('.card, .step, .a-card, .hf-card').forEach(el => {
       el.classList.add('reveal');
       observer.observe(el);
     });
 
-    // Form
     function handleSubmit(e) {
       e.preventDefault();
       const msg = document.getElementById('form-msg');
       msg.textContent = '✅ Message received! We\'ll be in touch within 24 hours.';
-      msg.style.color = '#4ade80';
+      msg.style.color = '#3fb950';
       e.target.reset();
     }
   </script>

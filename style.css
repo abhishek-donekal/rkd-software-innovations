@@ -230,7 +230,7 @@ body {
 }
 .section-header p { color: var(--muted-fg); font-size: 0.9375rem; max-width: 480px; margin: 0 auto; }
 
-.services-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+.services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
 .card {
   position: relative; overflow: hidden;
   background: var(--surface); border: 1px solid var(--border);
@@ -247,10 +247,15 @@ body {
   margin-bottom: 18px; background: var(--surface2); border: 1px solid var(--border);
 }
 .card-icon svg { width: 22px; height: 22px; }
-.card-ai .card-icon   { color: #60a5fa; }
-.card-web .card-icon  { color: #4ade80; }
-.card-data .card-icon { color: #fbbf24; }
-.card-cloud .card-icon{ color: #a78bfa; }
+.card-ai      .card-icon { color: #60a5fa; }
+.card-web     .card-icon { color: #4ade80; }
+.card-mobile  .card-icon { color: #34d399; }
+.card-desktop .card-icon { color: #f472b6; }
+.card-data    .card-icon { color: #fbbf24; }
+.card-dash    .card-icon { color: #fb923c; }
+.card-cloud   .card-icon { color: #a78bfa; }
+.card-net     .card-icon { color: #22d3ee; }
+.card-hw      .card-icon { color: #e879f9; }
 .card h3 { font-size: 1rem; font-weight: 600; margin-bottom: 8px; }
 .card-desc { color: var(--muted-fg); font-size: 0.875rem; line-height: 1.65; margin-bottom: 18px; }
 .card-list { list-style: none; display: flex; flex-direction: column; gap: 8px; }
@@ -342,7 +347,8 @@ body {
   .hero-inner { grid-template-columns: 1fr; gap: 40px; }
   .hero-left { text-align: center; }
   .hero-cta { justify-content: center; }
-  .services-grid { grid-template-columns: 1fr; }
+  .services-grid { grid-template-columns: 1fr 1fr; }
+  @media (max-width: 540px) { .services-grid { grid-template-columns: 1fr; } }
   .about-inner { grid-template-columns: 1fr; gap: 40px; }
   .contact-inner { grid-template-columns: 1fr; gap: 40px; }
 }

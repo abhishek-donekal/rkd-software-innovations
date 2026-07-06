@@ -255,6 +255,7 @@ body {
 .card-dash    .card-icon { color: #fb923c; }
 .card-cloud   .card-icon { color: #a78bfa; }
 .card-net     .card-icon { color: #22d3ee; }
+.card-cyber   .card-icon { color: #f87171; }
 .card-hw      .card-icon { color: #e879f9; }
 .card h3 { font-size: 1rem; font-weight: 600; margin-bottom: 8px; }
 .card-desc { color: var(--muted-fg); font-size: 0.875rem; line-height: 1.65; margin-bottom: 18px; }

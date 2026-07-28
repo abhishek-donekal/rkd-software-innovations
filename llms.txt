@@ -1,0 +1,32 @@
+# RKD Software Innovations
+
+> RKD Software Innovations is a full-service software solutions company. Tagline: "A Company For All Your IT Needs." We build custom technology for businesses of all sizes — from AI automation to hardware support — all under one roof.
+
+Website: https://www.rkdsoftwareinnovations.com
+Contact: contact@rkdsoftware.com
+
+## Services
+
+- AI & Smart Automation: custom AI assistants for 24/7 customer service, workflow automation, software integrations
+- Websites: high-performance custom websites built to convert
+- Mobile Apps: native and cross-platform iOS/Android development, App Store deployment
+- Desktop Software: custom Windows, Mac, and cross-platform desktop applications
+- Data & Analytics: data pipelines, sales/customer/operations analytics, secure database backups
+- Dashboards: real-time KPI dashboards for sales, operations, and finance
+- Cloud Infrastructure: migration and architecture on AWS and Google Cloud, auto-scaling, disaster recovery
+- Networking: network design, VPN/firewall setup, security hardening, ongoing support
+- Cybersecurity: vulnerability assessments, penetration testing, security audits, incident response
+- Hardware: workstation and server procurement, setup, troubleshooting, device configuration
+
+## Process
+
+1. Free 30-minute discovery call
+2. Custom plan with timeline and investment
+3. Build with regular updates and feedback loops
+4. Launch with ongoing 24/7 support
+
+## Key Facts
+
+- 100% custom-built solutions, no templates
+- 24/7 support available
+- Serves startups through scaling companies, remote-first, available worldwide

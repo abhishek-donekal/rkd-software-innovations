@@ -442,7 +442,7 @@ const nav = `
       </a>
       <ul class="nav-links">
         <li><a href="/#services">Services</a></li>
-        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/blog">Blog</a></li>
         <li><a href="/#about">About</a></li>
         <li><a href="/#contact" class="btn-nav">Get a Free Consult</a></li>
       </ul>
@@ -459,7 +459,7 @@ const footer = `
       <p class="footer-copy">&copy; 2026 RKD Software Innovations. All rights reserved.</p>
       <div class="footer-links">
         <a href="/#services">Services</a>
-        <a href="/blog/">Blog</a>
+        <a href="/blog">Blog</a>
         <a href="/#contact">Contact</a>
       </div>
     </div>
@@ -586,7 +586,7 @@ mkdirSync(join(ROOT, 'blog'), { recursive: true });
 for (const p of posts) {
   const path = `/blog/${p.slug}`;
   const schema = [
-    breadcrumb([['Home', '/'], ['Blog', '/blog/'], [p.title, path]]),
+    breadcrumb([['Home', '/'], ['Blog', '/blog'], [p.title, path]]),
     {
       '@context': 'https://schema.org', '@type': 'BlogPosting',
       headline: p.title, description: p.metaDesc,
@@ -600,7 +600,7 @@ for (const p of posts) {
 ${nav}
   <main class="page-main">
     <div class="container article-container">
-      <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> › <a href="/blog/">Blog</a></nav>
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> › <a href="/blog">Blog</a></nav>
       <article>
         <header class="page-header">
           <h1>${esc(p.title)}</h1>
@@ -625,14 +625,14 @@ ${footer}
 // ---------- blog index ----------
 
 const blogIndexSchema = [
-  breadcrumb([['Home', '/'], ['Blog', '/blog/']]),
+  breadcrumb([['Home', '/'], ['Blog', '/blog']]),
   {
     '@context': 'https://schema.org', '@type': 'Blog',
-    name: 'RKD Software Innovations Blog', url: SITE + '/blog/',
+    name: 'RKD Software Innovations Blog', url: SITE + '/blog',
     description: 'Practical guides on software solutions, AI automation, cybersecurity, cloud, and business technology.',
   },
 ];
-const blogIndex = `${head({ title: 'Blog — Software Solutions & Business Technology Guides | RKD Software Innovations', desc: 'Practical guides on custom software, AI automation, websites, cybersecurity, cloud migration, and business technology — from RKD Software Innovations.', path: '/blog/', schema: blogIndexSchema })}
+const blogIndex = `${head({ title: 'Blog — Software Solutions & Business Technology Guides | RKD Software Innovations', desc: 'Practical guides on custom software, AI automation, websites, cybersecurity, cloud migration, and business technology — from RKD Software Innovations.', path: '/blog', schema: blogIndexSchema })}
 ${nav}
   <main class="page-main">
     <div class="container">
@@ -657,7 +657,7 @@ writeFileSync(join(ROOT, 'blog', 'index.html'), blogIndex);
 const urls = [
   { loc: `${SITE}/`, pri: '1.0' },
   ...services.map(s => ({ loc: `${SITE}/services/${s.slug}`, pri: '0.8' })),
-  { loc: `${SITE}/blog/`, pri: '0.7' },
+  { loc: `${SITE}/blog`, pri: '0.7' },
   ...posts.map(p => ({ loc: `${SITE}/blog/${p.slug}`, pri: '0.6' })),
 ];
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>

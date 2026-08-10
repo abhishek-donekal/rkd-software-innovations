@@ -471,6 +471,13 @@ function head({ title, desc, path, schema }) {
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y21XH74M57"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-Y21XH74M57');
+  </script>
   <title>${esc(title)}</title>
   <meta name="description" content="${esc(desc)}" />
   <meta name="robots" content="index, follow" />

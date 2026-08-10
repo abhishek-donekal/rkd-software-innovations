@@ -4,6 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y21XH74M57"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-Y21XH74M57');
+  </script>
+
   <!-- Primary SEO -->
   <title>RKD Software Innovations | Software Solutions & IT Services</title>
   <meta name="description" content="RKD Software Innovations delivers end-to-end software solutions — AI automation, custom websites, mobile apps, cybersecurity, cloud infrastructure, data dashboards, and IT support for businesses of all sizes." />
@@ -641,6 +650,7 @@
         msg.textContent = '✅ Message sent! We\'ll be in touch within 24 hours.';
         msg.style.color = '#3fb950';
         form.reset();
+        if (typeof gtag === 'function') gtag('event', 'generate_lead', { form: 'contact' });
       } catch (err) {
         msg.textContent = '⚠ Could not send — please email us directly at contact@rkdsoftware.com.';
         msg.style.color = '#f87171';
